@@ -9,7 +9,7 @@ angular.module('myApp.musicians', ['ngResource', 'ngRoute'])
   });
 }])
 .factory('Musicians', ['$resource', function($resource) {
-  return $resource( 'http://localhost:3001/musicians/:_id', null,
+  return $resource( 'https://musician-server.herokuapp.com/musicians/:_id', null,
     {
         'update': { method:'PUT' }
     });
