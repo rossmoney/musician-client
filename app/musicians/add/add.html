@@ -1,0 +1,44 @@
+  <form class="form-horizontal" ng-submit="addMusician()">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Add A New Musician</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="musicianname">Name</label>  
+  <div class="col-md-4">
+  <input id="musicianname" ng-model="musician.name" name="musicianname" type="text" placeholder="Ben" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="musicianband">Band</label>  
+  <div class="col-md-4">
+  <input id="musicianband" ng-model="musician.band" name="musicianband" type="text" placeholder="Groovy Chipmunks" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="musicianinstrument">Instrument</label>  
+  <div class="col-md-4">
+  <input id="musicianinstrument" ng-model="musician.instrument" name="musicianinstrument" type="text" placeholder="Guitar" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="button1id"></label>
+  <div class="col-md-8">
+	<input type="submit" class="btn btn-success" id="addmusician" name="addmusician" value="Add" />
+    <button id="resetmusician" ng-click="cancelAddMusician()" name="resetmusician" class="btn btn-danger">Cancel</button>
+  </div>
+</div>
+
+</fieldset>
+</form>

@@ -1,0 +1,25 @@
+<legend>Musician Listing</legend>
+<table class="table">
+    <thead>
+	  <tr>
+	    <th>ID</th>
+        <th>Name</th>
+        <th>Band</th>
+        <th>Instrument</th>
+		<th></th>
+	  </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="musician in musiciansList">
+        <td>{{musiciansList[$index]._id}}</td>
+        <td>{{musician.name}}</td>
+        <td>{{musician.band}}</td>
+        <td>{{musician.instrument}}</td>
+		<td>
+			<button type="button" class="btn btn-default" ng-edit-musician="$index">Edit</button>
+			<button type="button" class="btn btn-danger" ng-remove-musician="$index">X</button>
+		</td>
+      </tr>
+    </tbody>
+  </table>
+  
